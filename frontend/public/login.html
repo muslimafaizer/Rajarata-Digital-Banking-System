@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | Rajarata Digital Banking System</title>
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body class="auth-body" data-page="login">
+
+  <main class="auth-card">
+    <div class="auth-header">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">✦</span>
+        RAJARATA<span>BANK</span>
+      </a>
+      <h1>Welcome Back</h1>
+      <span class="muted">Access your online banking account securely.</span>
+    </div>
+
+    <div id="banner" class="hidden"></div>
+
+    <form id="loginForm" novalidate>
+      <div class="field">
+        <label for="username">Username or Customer ID</label>
+        <input id="username" type="text" autocomplete="username" placeholder="e.g. testuser or admin" required>
+      </div>
+
+      <div class="field">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <label for="password">Password</label>
+          <button type="button" id="togglePassword" style="background:none; border:none; cursor:pointer; font-size:0.85rem; color:var(--emerald-800);" aria-label="Toggle password visibility">👁️ Show</button>
+        </div>
+        <input id="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+      </div>
+
+      <div class="form-msg hidden"></div>
+      <button class="btn btn-primary btn-block" type="submit" style="margin-top: 8px;">Sign In to Account</button>
+    </form>
+
+    <!-- Demo Credentials Helper Pills -->
+    <div class="demo-hints">
+      <b>Quick Demo Credentials (Click to fill):</b><br>
+      <span style="display:inline-block; margin-top:6px;">
+        Customer: <span class="demo-pill" data-user="testuser" data-pass="Secret123">testuser / Secret123</span>
+      </span><br>
+      <span style="display:inline-block; margin-top:4px;">
+        Admin: <span class="demo-pill" data-user="admin" data-pass="admin123">admin / admin123</span>
+      </span>
+    </div>
+
+    <p class="auth-foot">
+      Don't have an account yet? <a href="register.html" style="font-weight: 700;">Open an Account</a>
+    </p>
+    <p style="text-align: center; margin-top: 10px;">
+      <a href="index.html" class="muted" style="font-size: 0.85rem;">← Back to Home</a>
+    </p>
+  </main>
+
+  <script src="portal.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

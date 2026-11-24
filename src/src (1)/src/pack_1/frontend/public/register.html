@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Rajarata Digital Bank</title>
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body class="auth-body" data-page="register">
+  <main class="auth-card wide">
+    <a class="brand" href="index.html">RAJARATA<span>BANK</span></a>
+    <h1>Open your account</h1>
+    <span class="muted">A Savings account is opened for you automatically.</span>
+    <div id="banner" class="hidden"></div>
+    <form id="registerForm" novalidate>
+      <div class="form-row">
+        <div class="field"><label for="fullName">Full name</label><input id="fullName" autocomplete="name" required></div>
+        <div class="field"><label for="username">Username</label><input id="username" autocomplete="username" required><span class="hint">3-20 letters, numbers, _ or .</span></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" autocomplete="tel" placeholder="0771234567" required></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="nationalId">National ID</label><input id="nationalId" required></div>
+        <div class="field"><label for="address">Address</label><input id="address" autocomplete="street-address" required></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="password">Password</label><input id="password" type="password" autocomplete="new-password" required><span class="hint">8+ characters, with a letter and a number.</span></div>
+        <div class="field"><label for="confirm">Confirm password</label><input id="confirm" type="password" autocomplete="new-password" required></div>
+      </div>
+      <div class="form-msg hidden"></div>
+      <button class="btn btn-primary btn-block" type="submit">Create account</button>
+    </form>
+    <p class="auth-foot">Already registered? <a href="login.html">Log in</a></p>
+  </main>
+  <script src="portal.js"></script><script src="auth.js"></script>
+</body>
+</html>

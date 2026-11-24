@@ -1,0 +1,4 @@
+CUS101|testuser|Secret123|test@x.lk|0771234567|CUSTOMER|Test User|Anuradhapura|123456789V|0.0|false
+CUS102|debuguser23|Test12345|debug23@test.com|0771234567|CUSTOMER|Debug User|Negombo|923456789V|0.0|false
+CUS103|Musli|3030@Fas|faizermuslima08@gmail.com|+94772477308|CUSTOMER|Mohammed Faizer Fathima Muslima|No.73,Telecom road, Kattankudy-02|20034567892|0.0|false
+ADM001|admin|admin123|admin@dbs.lk|0771234567|ADMIN|Operations|5

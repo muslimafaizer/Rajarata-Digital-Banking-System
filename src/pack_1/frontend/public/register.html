@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open an Account | Rajarata Digital Banking System</title>
+  <link rel="stylesheet" href="portal.css">
+  <style>
+    .strength-bar-wrap {
+      height: 4px;
+      background: var(--charcoal-200);
+      border-radius: 2px;
+      margin-top: 6px;
+      overflow: hidden;
+    }
+    .strength-bar {
+      height: 100%;
+      width: 0%;
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="auth-body" data-page="register">
+
+  <main class="auth-card wide">
+    <div class="auth-header">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">✦</span>
+        RAJARATA<span>BANK</span>
+      </a>
+      <h1>Open a Digital Bank Account</h1>
+      <span class="muted">Join thousands of Sri Lankan citizens banking smarter. A high-yield Savings account is opened automatically.</span>
+    </div>
+
+    <div id="banner" class="hidden"></div>
+
+    <form id="registerForm" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="fullName">Full Legal Name</label>
+          <input id="fullName" type="text" autocomplete="name" placeholder="e.g. Faizer Muslima" required>
+        </div>
+        <div class="field">
+          <label for="username">Preferred Username</label>
+          <input id="username" type="text" autocomplete="username" placeholder="e.g. musli_26" required>
+          <span class="hint">3-20 letters, numbers, or dots/underscores.</span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+        </div>
+        <div class="field">
+          <label for="phone">Mobile Phone Number</label>
+          <input id="phone" type="tel" autocomplete="tel" placeholder="e.g. 0771234567 or +9477..." required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="nationalId">National Identity Card (NIC)</label>
+          <input id="nationalId" type="text" placeholder="e.g. 200345678901 or 923456789V" required>
+        </div>
+        <div class="field">
+          <label for="address">Residential Address</label>
+          <input id="address" type="text" autocomplete="street-address" placeholder="e.g. No. 73, Telecom Road, Kattankudy" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" required>
+          <div class="strength-bar-wrap">
+            <div id="strengthMeter" class="strength-bar"></div>
+          </div>
+          <span class="hint" id="strengthLabel"></span>
+        </div>
+        <div class="field">
+          <label for="confirm">Confirm Password</label>
+          <input id="confirm" type="password" autocomplete="new-password" placeholder="Re-enter password" required>
+        </div>
+      </div>
+
+      <div class="form-msg hidden"></div>
+      <button class="btn btn-primary btn-block" type="submit" style="margin-top: 10px;">Create My Account</button>
+    </form>
+
+    <p class="auth-foot">
+      Already have an account? <a href="login.html" style="font-weight: 700;">Sign In</a>
+    </p>
+    <p style="text-align: center; margin-top: 10px;">
+      <a href="index.html" class="muted" style="font-size: 0.85rem;">← Back to Home</a>
+    </p>
+  </main>
+
+  <script src="portal.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
